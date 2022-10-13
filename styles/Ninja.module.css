@@ -7,6 +7,9 @@
 }
 
 .single:hover {
-    border-radius: 15px, #c70f0f;
- 
+    border-left: 15px solid #c70f0f;
+    
 }
+
+
+

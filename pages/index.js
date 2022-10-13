@@ -21,15 +21,12 @@ export default function Home() {
           Lorem Ipsum dolor sit amet consectetur adipiscing elit. Provendet eos
           expedita cupidit.
         </p>
-
+    
         <Link href="/ninjas">
-          <a>See Ninja Listing </a>
-        </Link>
-
-        <Link href="/ninja">
           <a className={styles.btn}>See Ninja Listing</a>
         </Link>
       </div>
     </>
   );
 }
+ 

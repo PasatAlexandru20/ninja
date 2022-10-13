@@ -1,4 +1,5 @@
 //import styles
+import Link from 'next/link';
 import styles from  '../../styles/Ninja.module.css'
 
 //Run at build time,
@@ -13,17 +14,19 @@ return {
 }
 }
 
+
 const Ninjas = ({ninjas}) => {
+  console.log(styles)
   return (
     <div>
       <h1>All ninjas</h1>
       {ninjas.map(ninja => (
-        <div key={ninja.id}>
+        <Link  href={'./ninjas/' + ninja.id} key={ninja.id}>
           {/* Folosesc importul din .styles */}
           <a className={styles.single}>
             <h3> {ninja.name} </h3>
           </a>
-          </div>
+          </Link>
       ))}
     </div>
   );

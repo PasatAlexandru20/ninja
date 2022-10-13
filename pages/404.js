@@ -7,12 +7,11 @@ const NotFound = () => {
   //Folosesc userouter pentru push
     const router = useRouter()
 // Redirect la home page dupa 3secunde
-      useEffect(() => {
-        setTimeout(() => {
-            router.push('/')
-        }, 3000)
- console.log("Aici am folosit useeffect")
-      }, [])
+      // useEffect(() => {
+      //   setTimeout(() => {
+      //       router.push('/')
+      //   }, 3000)
+      // }, [])
 
     return (
         <div className="not-found">
